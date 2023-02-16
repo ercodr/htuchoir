@@ -18,7 +18,7 @@ const Form = () => {
 	};
 
 	useEffect(() => {
-		axios("http://127.0.0.1:8000/id-maker").then((res) =>
+		axios("https://htustudentschoir.pythonanywhere.com/id-maker").then((res) =>
 			setId(() => res.data["id"])
 		);
 	}, []);
@@ -32,7 +32,7 @@ const Form = () => {
 
 		axios
 			.post(
-				"http://127.0.0.1:8000/register/",
+				"https://htustudentschoir.pythonanywhere.com/register/",
 				{
 					fname: formData.fname.value,
 					phone: formData.phone.value,

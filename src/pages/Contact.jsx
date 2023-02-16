@@ -6,7 +6,7 @@ import axios from "axios";
 const Contact = () => {
 	const [contacts, setContacts] = useState(null);
 
-	axios("http://127.0.0.1:8000/contact").then((res) =>
+	axios("https://htustudentschoir.pythonanywhere.com/contact").then((res) =>
 		setContacts(() => res.data)
 	);
 	return (
