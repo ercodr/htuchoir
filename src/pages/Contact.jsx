@@ -20,7 +20,7 @@ const Contact = () => {
 			<section className="space-y-2 bg-slate-100 text-slate-600 w-full rounded-3xl p-4 max-w-md shadow-lg mt-4">
 				<h6 className="font-bold border-b border-slate-300 pb-2">Contact Us</h6>
 				<ul className="[&>*]:flex [&>*]:flex-col space-y-4">
-					{contacts === null ? <span>Loading...<span> :
+					{ contacts !== null ?
 						contacts.map((contact) => {
 							return (
 								<li key={contact.id}>
@@ -29,7 +29,7 @@ const Contact = () => {
 									<span>{contact.phone}</span>
 								</li>
 							);
-						})}
+						}) : <span>Loading...</span>}
 				</ul>
 			</section>
 			<Link
