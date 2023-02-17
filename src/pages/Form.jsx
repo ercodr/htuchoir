@@ -97,7 +97,7 @@ const Form = () => {
 					className="[&>*]:appearance-none [&>*]:py-2 [&>*]:px-4 [&>*]:outline-none text-slate-900 flex flex-col p-4 gap-2"
 				>
 					<input
-						type="text"
+						type="hidden"
 						className="rounded-full font-normal border"
 						name="membership_id"
 						readOnly
