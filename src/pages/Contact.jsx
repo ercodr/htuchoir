@@ -21,7 +21,7 @@ const Contact = () => {
 				<h6 className="font-bold border-b border-slate-300 pb-2">Contact Us</h6>
 				<ul className="[&>*]:flex [&>*]:flex-col space-y-4">
 		{
-			contacts === null ? <span>Loading...</span> : (
+			contacts === null ? <span className="text-green-500">Loading...</span> : (
 				contacts.map((contact) => {
 							return (
 								<li key={contact.id}>
